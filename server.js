@@ -1,14 +1,29 @@
 const express = require('express');
-const app = express();
+const nunjucks = require('nunjucks');
+var app = express();
 const sass = require('sass');
-const path = require('path');
 const OpenAI = require('openai');
 const fs = require('fs');
 require('dotenv').config();
 
+var path = require('path');
+app.use('/assets', express.static(path.join(__dirname, '/node_modules/govuk-frontend/govuk/assets')))
+
+nunjucks.configure([
+  'app/views', 
+  'node_modules/govuk-frontend/'
+],
+{
+  autoescape: true,
+  express: app
+})
+
+app.set('view engine', 'html')
+
 app.use(express.json());
 app.use(express.static('public'));
 
+/*
 app.post('/sendToOpenAI', async (req, res) => {
   const question = req.body.question;
   const openai = new OpenAI();
@@ -147,8 +162,17 @@ app.post('/sendToOpenAI', async (req, res) => {
   }
 
 });
+*/
 
 const port = 3000;
+
+// Auto render any view that exists
+
+app.get('/', (req, res) => {
+  res.render('nunjucks.html')
+})
+
+
 app.listen(port, () => {
 	console.log('Server running at http://localhost:3000');
 })
