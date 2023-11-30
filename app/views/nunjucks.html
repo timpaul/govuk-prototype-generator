@@ -13,7 +13,7 @@
 
 		{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
         {{ govukTextarea({
-          name: "moreDetail",
+          name: "question",
           id: "question-input",
           rows: "13",
           label: {
@@ -36,7 +36,6 @@
   </div>
   <div class="govuk-grid-column-one-half">
     <iframe id="previewWindow" src="default.html" width="100%" height="500px" style="border: 2px solid" scrolling="no">
-
     </iframe>
   </div>
 </div>
@@ -46,5 +45,6 @@
 {% block bodyEnd %}
   {# Run JavaScript at end of the <body>, to avoid blocking the initial render. #}
   <script src="/govuk-frontend/all.js"></script>
+  <script src="/assets/scripts.js"></script>
   <script>window.GOVUKFrontend.initAll()</script>
 {% endblock %}
