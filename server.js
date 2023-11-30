@@ -23,7 +23,7 @@ app.set('view engine', 'html')
 app.use(express.json());
 app.use(express.static('public'));
 
-/*
+
 app.post('/sendToOpenAI', async (req, res) => {
   const question = req.body.question;
   const openai = new OpenAI();
@@ -162,7 +162,6 @@ app.post('/sendToOpenAI', async (req, res) => {
   }
 
 });
-*/
 
 const port = 3000;
 
