@@ -1,6 +1,6 @@
 # govuk-prototype-generator
 
-Use ChatGPT to specify pages that follow the GOV.UK Design System
+Use ChatGPT to build web pages that follow the GOV.UK Design System
 
 ## Step 1: Get and set an OpenAI API Key
 
