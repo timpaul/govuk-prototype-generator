@@ -5,7 +5,7 @@ Use ChatGPT to build web pages that follow the GOV.UK Design System
 ## Step 1: Get and set an OpenAI API Key
 
 You need an API key to use OpenAPI:
-- Sign up at platform.openai.com
+- Sign up at [platform.openai.com](platform.openai.com)
 - [Then get your API key](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/)
 - Then add some credit to your OpenAI account
 - £10 will get you about 600 goes on the model
