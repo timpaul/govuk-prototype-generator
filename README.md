@@ -5,12 +5,10 @@ Use ChatGPT to build web pages that follow the GOV.UK Design System
 ## Step 1: Get and set an OpenAI API Key
 
 You need an API key to use OpenAPI:
-- Sign up at [platform.openai.com](platform.openai.com)
-- [Then get your API key](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/)
-- Then add some credit to your OpenAI account
-- £10 will get you about 600 goes on the model
-- Finally, you need to set a local environment variable to your new API key
-- [There are instructions here](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)
+1. Sign up at [platform.openai.com](platform.openai.com)
+2. [Then get your API key](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/)
+3. Then add some credit to your OpenAI account (£10 will get you about 600 goes on the model)
+4. Finally, you need to [set a local environment variable to your new API key ](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)
 
 ## Step 2: Install and run this repo
 
@@ -18,7 +16,7 @@ Git clone this repo to your local machine.
 
 You'll need Node 18 or higher.
 
-Once you're in the repo folder in the Terminal, type:
+Once you're in the local repo folder in the Terminal, type:
 ``` 
 npm install
 npm start
